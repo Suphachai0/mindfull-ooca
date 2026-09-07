@@ -1,0 +1,5 @@
+project_id = "ooca-stars"
+
+[functions.star-api]
+# Guests can read and submit; JWTs are verified explicitly in the function.
+verify_jwt = false

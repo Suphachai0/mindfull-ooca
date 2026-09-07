@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+.DS_Store
+*.tsbuildinfo
+test-results/
+playwright-report/
+output/
+star-paper-svg/
+*.zip
+supabase/.temp/
+supabase/.branches/
+remove_background.py
+tools/
