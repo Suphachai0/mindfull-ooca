@@ -1,8 +1,13 @@
-# ผลตรวจ 7 กันยายน 2026
+# ผลตรวจ Production — 8 กันยายน 2026
 
-- TypeScript และ production build: ผ่าน (ยังมีคำเตือน bundle เกิน 500 kB ต้องแบ่งโหลดภายหลัง)
-- Vitest: ผ่าน 3 รายการ ตรวจร่างทีมครบ 6 กลุ่ม, ข้อความ/Unicode, pool ไม่ซ้ำและไม่แสดง hidden, guest ไม่ถูกย้ายเข้าประวัติบัญชี, submission idempotency, save ซ้ำ, moderation และสิทธิ์ผู้ดูแลใน preview
-- Chrome Playwright: ผ่าน 10 รายการ อ่าน/เก็บบน 320,390,834,1280 px; ข้อความเต็ม 120 code points ไม่ล้นกระดาษทั้ง 4 ขนาด; guest เขียน→preview→fold→send และประวัติแยก; motion จริงพับ 6 วินาทีและ pause/resume ขณะเปิด modal
-- ตรวจภาพ jar และ preview จอเล็กด้วยสายตา ปรับ blend ภาพพื้นขาวให้เข้ากับพื้นหลัง
+- Production build และ TypeScript: ผ่าน มีคำเตือนเฉพาะ bundle JavaScript ขนาด 584 kB ซึ่งควรแบ่งโหลดในการปรับประสิทธิภาพรอบถัดไป
+- Vitest: ผ่าน 6 รายการ ครอบคลุมร่างดาว 60 ดวง, 6 กลุ่มความรู้สึก, Unicode 120 ตัวอักษร, การสุ่มไม่ซ้ำ, idempotency, โถดาว และ moderation
+- Chrome Playwright: ผ่าน 17 รายการ ครอบคลุม 320, 390, 834 และ 1280 px, reduced motion, อ่าน เขียน ส่ง เก็บดาว และ production configuration
+- GitHub Actions: ผ่านทั้ง 3 รอบล่าสุด รวม build, unit tests, browser tests และ production tests
+- Supabase: migration 5 ชุดติดตั้งแล้ว, `star-api` deploy แล้ว, ดาวทีม 60 ดวงเป็น approved, retention cron และ RLS ติดตั้งแล้ว
+- Production smoke test: ดึงดาวกลุ่ม “เหงา” ได้ 6 ดวง, เปิดข้อความจริง, เก็บในโถ local-only และส่ง Guest ผ่าน Turnstile สำเร็จ
+- ข้อความ smoke test ถูกเปลี่ยนเป็น rejected ผ่าน helper function พร้อม audit จึงไม่อยู่ในระบบสุ่ม และจะถูกลบตาม retention 30 วัน
+- Cloudflare Pages: deploy สำเร็จที่ `https://mindfull-ooca.pages.dev`; Turnstile Managed ใช้ hostname production และ Secret เก็บใน Supabase
+- Privacy, Terms, Beta และลิงก์ GitHub Issues แสดงบนเว็บไซต์จริงแล้ว
 
-ผลนี้ครอบคลุมโหมดในเครื่อง ไม่ได้ยืนยัน Supabase, Google OAuth, Turnstile, หลายผู้ใช้พร้อมกัน, Safari/Firefox หรือความตรงกับ Figma ทุกจุด ดู READINESS.md ก่อนเปิดบริการจริง
+ข้อจำกัดที่ยังเหลือ: ยังไม่ได้ทดสอบ Safari/Firefox และหลายผู้ใช้พร้อมกัน; ระบบ Login ยังปิดตามขอบเขต MVP; bundle ควรแบ่งโหลดภายหลัง

@@ -1,4 +1,4 @@
-project_id = "ooca-stars"
+project_id = "mindfull-ooca"
 
 [functions.star-api]
 # Guests can read and submit; JWTs are verified explicitly in the function.
