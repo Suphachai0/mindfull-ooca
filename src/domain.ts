@@ -26,7 +26,9 @@ export function sampleStars(stars: Star[], emotion: EmotionId, count = 6, random
   return candidates.slice(0, count);
 }
 export const motionTiming = { fold: 6, send: 12, highlight: 6, jarDrop: 1.8, jarSettle: .25, unfold: 3 };
-export const starAsset = (emotion: EmotionId, step = 0) => `/assets/star-${emotion}-${step}.png`;
+export const starAsset = (emotion: EmotionId, step?: number) => step === undefined
+  ? `/assets/star-${emotion}.svg`
+  : `/assets/paper-${emotion}-${step}.svg`;
 export function relativeDate(iso: string) {
   const date = new Date(iso); const days = Math.floor((Date.now() - date.getTime()) / 86400000);
   return days < 1 ? 'วันนี้' : days === 1 ? 'เมื่อวาน' : new Intl.DateTimeFormat('th-TH', { day: 'numeric', month: 'short', year: 'numeric' }).format(date);

@@ -1,0 +1,43 @@
+/* One continuous Home gradient across every route and viewport. */
+:root{--page-background:linear-gradient(to bottom,#dbf0ee 41.338svh,rgba(228,239,251,0) 84.375svh),#fff}
+.app,.app-home{background:var(--page-background)}
+.screen.page-sky,.screen.page-sent,.screen.page-read,.screen.page-write,.screen.page-preview,.screen.page-fold{background:transparent}
+.screen{isolation:isolate}
+.paper,.emotion-strip img{mix-blend-mode:normal}
+.scene-decoration,.page-sky .scene-decoration,.page-sent .scene-decoration{z-index:-1}
+.read-art,.fold-art{position:relative;z-index:1}
+.scene-background{object-fit:fill;object-position:top center}
+.scene-decoration{left:calc(50% - 50vw);right:auto;width:100vw}
+
+/* Animate against a full-width track, so the start/end lie outside the frame. */
+.entry-art{container-type:inline-size}
+.entry-cloud-left,.entry-cloud-right,.entry-cloud-bottom{left:0;animation:cloud-pass 30s linear infinite}
+.entry-cloud-left{animation-delay:-3s}.entry-cloud-right{animation-delay:-17s}.entry-cloud-bottom{animation-delay:-25s}
+@keyframes cloud-pass{0%{transform:translateX(-100%);opacity:0}10%{opacity:1}90%{opacity:1}100%{transform:translateX(100cqw);opacity:0}}
+.scene-cloud-lane{position:absolute;inset:14% 0 auto;height:90px;container-type:inline-size}
+.scene-cloud-lane.second{top:38%}
+.scene-cloud-lane img{width:140px;height:90px;animation:cloud-pass 30s linear infinite;animation-delay:-8s}
+.scene-cloud-lane.second img{animation-delay:-23s}
+
+/* Static, repeating base keeps coverage while individual clouds enter/leave. */
+.page-sky>.scene-foreground,.page-sent>.scene-foreground{left:50%;width:100vw;max-width:none;height:196px;bottom:0;transform:translateX(-50%);overflow:visible}
+.page-sky,.page-sent{overflow:visible}
+.scene-foreground .sky-companion{position:absolute;left:max(0px,calc(50% - 195px));bottom:50px;width:180px;height:145px;object-fit:contain}
+.cloud-bank{position:absolute;inset:60px -20px 0;background:url('/assets/entry-cloud-bottom.svg') left top/190px 120px repeat-x}
+.cloud-bank::after{content:'';position:absolute;inset:90px 0 0;background:#f0f7ff}
+.page-sky .sky-actions,.sent-screen>.secondary{z-index:6}
+.page-sky{min-height:max(844px,100svh)}
+
+.jar-scene{width:min(100%,330px);height:auto;aspect-ratio:353/423}
+.jar-image{object-fit:contain}
+.jar-stars{inset:25% 14% 12%}
+.jar-star{width:22%;height:auto;aspect-ratio:1}
+.jar-companion{width:130px;height:auto;aspect-ratio:199/180;left:-14px;bottom:-8px}
+.text-field textarea:focus,.text-field textarea:focus-visible{outline:none;box-shadow:none}
+.text-field:focus-within{border-color:#335cb3}
+
+@media(prefers-reduced-motion:reduce){
+  .entry-cloud-left,.entry-cloud-right,.entry-cloud-bottom,.scene-cloud-lane img{animation:none!important;opacity:1;transform:none}
+  .entry-cloud-left{left:-10.234%}.entry-cloud-right{left:83.626%}.entry-cloud-bottom{left:-4.678%}
+  .scene-cloud-lane img{position:absolute;left:-50px}.scene-cloud-lane.second img{left:auto;right:-50px}
+}

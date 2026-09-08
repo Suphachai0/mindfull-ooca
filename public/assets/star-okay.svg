@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="250" height="250" viewBox="0 0 250 250" role="img" aria-labelledby="title7 desc7">
+  <title id="title7">Paper star 7</title>
+  <desc id="desc7">A glossy folded-paper star on a transparent background.</desc>
+  <defs>
+    <linearGradient id="g7-main" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d8f7f3"/>
+      <stop offset="0.52" stop-color="#a9e5df"/>
+      <stop offset="1" stop-color="#8ed5d0"/>
+    </linearGradient>
+    <linearGradient id="g7-left" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#a9e5df"/>
+      <stop offset="1" stop-color="#8ed5d0"/>
+    </linearGradient>
+    <linearGradient id="g7-right" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d8f7f3" stop-opacity=".34"/>
+      <stop offset="1" stop-color="#8ed5d0"/>
+    </linearGradient>
+    <clipPath id="g7-clip"><path d="M125 32 C115 32 108 45 101 59 L84 89 L37 98 C23 101 20 108 29 118 L64 153 L57 204 C55 217 61 224 73 220 L125 200 L177 220 C189 224 196 216 194 204 L186 153 L221 118 C231 108 226 101 214 98 L166 89 L149 59 C141 44 135 32 125 32 Z"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#g7-clip)">
+    <path d="M125 32 C115 32 108 45 101 59 L84 89 L37 98 C23 101 20 108 29 118 L64 153 L57 204 C55 217 61 224 73 220 L125 200 L177 220 C189 224 196 216 194 204 L186 153 L221 118 C231 108 226 101 214 98 L166 89 L149 59 C141 44 135 32 125 32 Z" fill="url(#g7-main)"/>
+    <path d="M24 108 L70 143 L64 154 L28 119 Z" fill="#8ed5d0" opacity=".98"/>
+    <path d="M64 153 L125 200 L56 224 Z" fill="url(#g7-left)"/>
+    <path d="M166 89 L229 103 L185 153 Z" fill="url(#g7-right)"/>
+    <path d="M185 133 L198 224 L125 200 Z" fill="#a9e5df" opacity=".72"/>
+    <path d="M28 116 L177 222 L125 200 L64 153 Z" fill="#75c5a4" opacity=".18"/>
+    <path d="M58 219 L185 132 L125 200 Z" fill="#d8f7f3" opacity=".34"/>
+    <path d="M64 153 L125 200" fill="none" stroke="#75c5a4" stroke-width="1" stroke-opacity=".52"/>
+    <path d="M58 219 L185 132" fill="none" stroke="#75c5a4" stroke-width="1.15" stroke-opacity=".68"/>
+    <path d="M185 132 L194 205" fill="none" stroke="#75c5a4" stroke-width=".8" stroke-opacity=".38"/>
+
+    <path d="M108 49 C114 37 122 36 126 43 C130 51 123 66 115 79 C109 88 102 90 97 85 C92 79 100 63 108 49 Z" fill="#fff" opacity=".52"/>
+    <path d="M48 101 C59 95 75 94 84 96 C91 99 88 104 82 107 C70 112 53 113 47 108 C44 106 45 103 48 101 Z" fill="#fff" opacity=".48"/>
+    <path d="M111 43 C117 35 122 34 126 37" fill="none" stroke="#fff" stroke-width="1.1" stroke-linecap="round" opacity=".45"/>
+  </g>
+
+  <path d="M125 32 C115 32 108 45 101 59 L84 89 L37 98 C23 101 20 108 29 118 L64 153 L57 204 C55 217 61 224 73 220 L125 200 L177 220 C189 224 196 216 194 204 L186 153 L221 118 C231 108 226 101 214 98 L166 89 L149 59 C141 44 135 32 125 32 Z" fill="none" stroke="#4bafe9" stroke-width="1.65" stroke-linejoin="round"/>
+</svg>

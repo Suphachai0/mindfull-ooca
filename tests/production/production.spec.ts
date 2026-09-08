@@ -20,20 +20,20 @@ test.beforeEach(async ({ page }) => {
 test('production guest can send with Turnstile and use a local-only jar', async ({ page }) => {
   await page.goto('/');
   await expect(page.getByText('กำลังทดลองในเครื่องนี้')).toHaveCount(0);
-  await page.getByRole('button', { name: 'ลองเลือกความรู้สึก' }).click();
+  await page.getByRole('button', { name: 'เริ่มทดสอบกันเลย' }).click();
   await page.getByRole('button', { name: 'เหนื่อยมาก', exact: true }).click();
   await page.getByRole('button', { name: 'เลือกดาวดวงที่ 1' }).click();
-  await page.getByRole('button', { name: 'เปิดดาวดวงนี้' }).click();
-  await page.getByRole('button', { name: 'เก็บดาวไว้ในโถ' }).click();
+  await page.getByRole('button', { name: 'เลือกดาวนี้' }).click();
+  await page.getByRole('button', { name: 'เก็บไว้ในกล่องความทรงจำ' }).click();
   await expect(page.getByText('เก็บไว้แล้ว 1 ดวง')).toBeVisible();
   await expect(page.getByText(/เฉพาะในเบราว์เซอร์นี้/)).toBeVisible();
   await page.getByRole('button', { name: 'ฝากดาวให้ใครบางคน' }).click();
   await page.getByRole('button', { name: 'เหนื่อยมาก', exact: true }).click();
   await page.getByLabel('ถ้าเขารู้สึกแบบนี้').fill('พักก่อนได้นะ');
-  await page.getByRole('button', { name: 'ดูตัวอย่างดาว' }).click();
-  await expect(page.getByRole('button', { name: 'พับแล้วส่งดาว' })).toBeEnabled();
-  await page.getByRole('button', { name: 'พับแล้วส่งดาว' }).click();
-  await expect(page.getByRole('heading', { name: 'ส่งดาวแล้ว' })).toBeVisible();
+  await page.getByRole('button', { name: 'ต่อไป' }).click();
+  await expect(page.getByRole('button', { name: 'พับเป็นดาว' })).toBeEnabled();
+  await page.getByRole('button', { name: 'พับเป็นดาว' }).click();
+  await expect(page.getByRole('heading', { name: 'ส่งดาวของคุณแล้ว', exact: true })).toBeVisible();
 });
 
 test('production menu hides account history and exposes policy pages', async ({ page }) => {
