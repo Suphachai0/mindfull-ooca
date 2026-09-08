@@ -66,6 +66,6 @@ export function SentScene({star,paused,open}: {star:Star;paused:boolean;open:()=
     {[0,1,2].map(i=><img className={`wind wind-${i}`} src="/assets/sky-wind.svg" alt="" key={`w${i}`}/>)}
     {positions.map(([x,y],i)=>i===3?<div className="own-star-position" style={{left:`${x}%`,top:`${y}%`,animationPlayState:paused?'paused':'running'}} key={i}>
       <motion.button className="sent-star" initial={reduced?false:{y:240,opacity:0}} animate={{y:0,opacity:1}} transition={{duration:1.2,ease:'easeOut'}} onClick={open} aria-label="อ่านดาวที่เพิ่งส่ง"><img src={starAsset(star.emotion)} alt="ดาวของคุณ"/><span className="sr-only">{star.content}</span></motion.button>
-    </div>:<img className="success-star" key={i} src="/assets/sky-star.svg" alt="" style={{left:`${x}%`,top:`${y}%`,opacity:i===0?.3:i<3?.7:1,animationDelay:`${-i}s`,animationPlayState:paused?'paused':'running'}}/>)}
+    </div>:<img className="success-star" key={i} src={starAsset('tired')} alt="" style={{left:`${x}%`,top:`${y}%`,opacity:i===0?.3:i<3?.7:1,animationDelay:`${-i}s`,animationPlayState:paused?'paused':'running'}}/>)}
   </div>;
 }

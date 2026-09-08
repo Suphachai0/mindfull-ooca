@@ -1,13 +1,16 @@
 import { defineConfig } from '@playwright/test';
 
+const port = Number(process.env.PRODUCTION_TEST_PORT || 5175);
+const baseURL = `http://127.0.0.1:${port}`;
+
 export default defineConfig({
   testDir: './tests/production',
   workers: 1,
   reporter: 'list',
-  use: { baseURL: 'http://127.0.0.1:5175', channel: 'chrome', reducedMotion: 'reduce' },
+  use: { baseURL, channel: 'chrome', reducedMotion: 'reduce' },
   webServer: {
-    command: 'npm run dev -- --port 5175',
-    url: 'http://127.0.0.1:5175',
+    command: `npm run dev -- --port ${port}`,
+    url: baseURL,
     reuseExistingServer: false,
     env: {
       ...process.env,
