@@ -8,4 +8,5 @@ import '@fontsource/prompt/latin-400.css';
 import '@fontsource/prompt/latin-500.css';
 import App from './App';
 import './styles.css';
+import './review.css';
 ReactDOM.createRoot(document.getElementById('root')!).render(<React.StrictMode><App /></React.StrictMode>);

@@ -1,0 +1,48 @@
+<svg width="390" height="844" viewBox="0 0 390 844" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Scenery / Cloud layers">
+<g id="Cloud / Upper left" opacity="0.32">
+<path id="Vector" d="M-13.6498 195.135C-35.8798 195.135 -35.8798 165.786 -17.1598 164.025C-14.2348 149.35 6.24018 148.763 13.2602 158.155C29.0552 135.849 54.2102 152.872 52.4552 169.894C70.0052 179.286 58.3052 198.07 43.6802 196.896L-13.6498 195.135Z" fill="#C7DDF7"/>
+</g>
+<g id="Cloud / Upper right" opacity="0.28" clip-path="url(#clip1_1_9371)">
+<path id="Vector_2" d="M347.587 131.75C327.21 131.75 327.21 104.846 344.37 103.232C347.051 89.7805 365.82 89.2424 372.255 97.8515C386.734 77.4049 409.792 93.0089 408.184 108.613C424.271 117.222 413.546 134.44 400.14 133.364L347.587 131.75Z" fill="#C7DDF7"/>
+</g>
+<g id="Cloud / Left" opacity="0.7">
+<path id="Vector_3" d="M-12.75 448.621C-46 448.621 -46 404.723 -18 402.089C-13.625 380.14 17 379.262 27.5 393.309C51.125 359.946 88.75 385.407 86.125 410.868C112.375 424.916 94.875 453.011 73 451.255L-12.75 448.621Z" fill="url(#paint1_linear_1_9371)"/>
+</g>
+<g id="Cloud / Mid right" opacity="0.3" clip-path="url(#clip2_1_9371)">
+<path id="Vector_4" d="M359.287 460.91C338.91 460.91 338.91 434.007 356.07 432.392C358.751 418.941 377.52 418.403 383.955 427.012C398.434 406.565 421.492 422.169 419.884 437.773C435.971 446.382 425.246 463.6 411.84 462.524L359.287 460.91Z" fill="#C7DDF7"/>
+</g>
+<g id="Cloud / Left_2" opacity="0.7">
+<path id="Vector_5" d="M-9.7501 649.24C-46.8001 649.24 -46.8001 600.24 -15.6001 597.3C-10.7251 572.8 23.3999 571.82 35.0999 587.5C61.4249 550.26 103.35 578.68 100.425 607.1C129.675 622.78 110.175 654.14 85.7999 652.18L-9.7501 649.24Z" fill="url(#paint2_linear_1_9371)"/>
+</g>
+<g id="Cloud / Lower blue right" opacity="0.5">
+<path id="Vector_6" d="M305.419 765.379C269.295 765.379 269.295 717.687 299.715 714.825C304.468 690.979 337.74 690.025 349.148 705.287C374.814 669.04 415.691 696.702 412.839 724.364C441.358 739.625 422.346 770.148 398.58 768.241L305.419 765.379Z" fill="#C7DDF7"/>
+</g>
+<g id="Cloud / Lower blue right_2" opacity="0.5">
+<path id="Vector_7" d="M10.375 784.561C-50.8999 784.561 -50.8999 703.561 0.700054 698.701C8.76255 658.201 65.2 656.581 84.55 682.501C128.088 620.941 197.425 667.921 192.588 714.901C240.963 740.821 208.713 792.661 168.4 789.421L10.375 784.561Z" fill="#C7DDF7"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_1_9371" x1="195" y1="0" x2="195" y2="844" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E4EFFB"/>
+<stop offset="1" stop-color="white"/>
+</linearGradient>
+<linearGradient id="paint1_linear_1_9371" x1="-38.386" y1="377.367" x2="-38.386" y2="451.334" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="#E4EFFB"/>
+</linearGradient>
+<linearGradient id="paint2_linear_1_9371" x1="-38.3159" y1="569.705" x2="-38.3159" y2="652.268" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="#E4EFFB"/>
+</linearGradient>
+<clipPath id="clip0_1_9371">
+<rect width="390" height="844" fill="white"/>
+</clipPath>
+<clipPath id="clip1_1_9371">
+<rect width="85.8" height="53.8068" fill="white" transform="translate(331.5 84.3999)"/>
+</clipPath>
+<clipPath id="clip2_1_9371">
+<rect width="85.8" height="53.8068" fill="white" transform="translate(343.2 413.56)"/>
+</clipPath>
+</defs>
+</svg>
